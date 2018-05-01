@@ -5,22 +5,29 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>Example API</servlet-name>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.example.jersey</param-value>
+            <param-value>com.dtuservices</param-value>
         </init-param>
 
         <init-param>
             <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
             <param-value>true</param-value>
         </init-param>
+
+        
     </servlet>
 
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
     <servlet-mapping>
-        <servlet-name>Example API</servlet-name>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
 </web-app>

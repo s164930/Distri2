@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>MInside API</title>
   </head>
   <body>
-  $END$
+  <p><a href="/getuserinfo">lol</a>
   </body>
 </html>
